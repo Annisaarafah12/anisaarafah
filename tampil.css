@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  position: fixed;
+}
+.navbar .navbar-nav a {
+  font-family: "Alkalami", serif;
+}
+
+/*pertama*/
+#pertama {
+  height: 10px 0s;
+  width: 100%;
+  background-color: #dbae92;
+}
+.container h1 {
+  color: #000;
+  font-family: Emilys Candy;
+  font-size: 50px;
+  margin-top: 25%;
+  margin-left: 70px;
+}
+.container .text {
+  font-family: "Alkalami", serif;
+  font-size: 25px;
+  margin-left: 70px;
+}
+.container img {
+  position: relative;
+}
+.awal {
+  position: absolute;
+  width: 420px;
+  height: 228px;
+  left: 0px;
+  top: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#layanan {
+  padding: 10px 0;
+  width: 100%;
+  background-color: #dbae92;
+}
+h2 {
+  font-size: 45px;
+  color: #c47a26;
+  font-family: "Emilys Candy", cursive;
+}
+.sub-title {
+  font-size: 20px;
+  color: black;
+  font-family: "Alkalami", serif;
+}
+.card-layanan {
+  width: 100%;
+  height: 330px;
+  border-radius: 10%;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in;
+}
+.card-layanan .circle-icon img {
+  width: 200px;
+  height: 150px;
+  position: relative;
+}
+.circle-icon {
+  width: 200px;
+  height: 150px;
+  border-radius: 20%;
+  transition: all 0.1s ease-in;
+}
+.card-layanan h3 {
+  color: burlywood;
+  font-size: 24px;
+  transition: all 0.2s ease-in;
+}
+.card-layanan p {
+  color: #000;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+}
+/*Hover*/
+.card-layanan:hover {
+  width: 100%;
+  height: 330px;
+  border-radius: 10%;
+  background-color: #856e6e;
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease-in;
+}
+.card-layanan:hover .circle-icon {
+  transition: all 0.4s ease-in;
+}
+.card-layanan:hover h3 {
+  color: #fff;
+  font-size: 24px;
+  transition: all 0.4s ease-in;
+}
+.card-layanan:hover p {
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.4s ease-in;
+}
+/*Hero*/
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #ad8b73;
+}
+.img-hero {
+  height: 60%;
+}
+.hero-tagline h1 {
+  color: #000;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
+}
+.hero-tagline p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 30px;
+  width: 85%;
+}
+.button-lg-primary {
+  width: 237px;
+  height: 70px;
+  background-color: #fff;
+  color: burlywood;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.button-secondary {
+  width: 133px;
+  height: 40px;
+  background-color: #fff;
+  color: burlywood;
+  border: none;
+  font-size: 16px;
+  font: bold;
+}
+.button-primary {
+  width: 133px;
+  height: 40px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+}
