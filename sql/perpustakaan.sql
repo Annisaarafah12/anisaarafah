@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Feb 2023 pada 08.06
--- Versi server: 10.4.27-MariaDB
--- Versi PHP: 7.4.33
+-- Waktu pembuatan: 22 Feb 2023 pada 08.10
+-- Versi server: 10.4.24-MariaDB
+-- Versi PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,7 +34,7 @@ CREATE TABLE `buku` (
   `penerbit_buku` varchar(50) NOT NULL,
   `tahun_penerbit` char(4) NOT NULL,
   `stok` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -49,7 +49,7 @@ CREATE TABLE `data_peminjaman` (
   `tgl_pengembalian` date NOT NULL,
   `kelas` varchar(45) NOT NULL,
   `status` enum('dipinjam','dikembalikan') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -62,7 +62,7 @@ CREATE TABLE `siswa` (
   `nama` varchar(45) NOT NULL,
   `kelas` enum('10','11','12') NOT NULL,
   `jurusan` enum('atph','tbsm','rpl') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -76,16 +76,18 @@ CREATE TABLE `tb_siswa` (
   `jekel` enum('Laki-laki','Perempuan') NOT NULL,
   `jurusan` varchar(200) NOT NULL,
   `foto` varchar(1200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `tb_siswa`
 --
 
 INSERT INTO `tb_siswa` (`nis`, `nama`, `jekel`, `jurusan`, `foto`) VALUES
+('1111', 'diqa', 'Perempuan', 'rpl', 'bg.jpg'),
 ('123', 'sifat', 'Perempuan', 'rpl', 'Koala.jpg'),
 ('1234', 'anisa', 'Perempuan', 'ipa', 'Desert.jpg'),
-('123456', 'isma', 'Perempuan', 'rpl', 'Chrysanthemum.jpg');
+('123456', 'isma', 'Perempuan', 'rpl', 'Chrysanthemum.jpg'),
+('2222', 'caca', 'Perempuan', 'rpl', 'user.png');
 
 -- --------------------------------------------------------
 
@@ -100,7 +102,7 @@ CREATE TABLE `user` (
   `role` enum('petugas','admin') NOT NULL,
   `alamat` varchar(225) NOT NULL,
   `no_tlpn` int(13) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `user`

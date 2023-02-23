@@ -1,5 +1,7 @@
-body{
-  background-color: #ad8b73;
+body {
+  background-image: url("img/bg1.jpg");
+  background-repeat: no-repeat;
+
 }
 form {
   background: #ccc9c9;

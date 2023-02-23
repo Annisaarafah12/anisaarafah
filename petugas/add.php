@@ -6,7 +6,8 @@ $koneksi = new mysqli ("localhost","root","","perpustakaan");
 
 <head>
 	<title>APLIKASI CRUD</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -15,7 +16,7 @@ $koneksi = new mysqli ("localhost","root","","perpustakaan");
 <body>
 
 	<div class="container">
-		<div class="col-lg-8">
+		<div class="col-lg-12">
 			<div class="page-header">
 				<br>
 				<br>
@@ -56,8 +57,8 @@ $koneksi = new mysqli ("localhost","root","","perpustakaan");
 				<br>
 
 				<div class="form-group">
-					<input type="submit" name="Simpan" value="Simpan Data" class="btn btn-primary">
-					<a href="index.php" class="btn btn-warning">Batal</a>
+					<input href="index.php?page=data" type="submit" name="Simpan" value="Simpan Data" class="btn btn-primary">
+					<a href="" class="btn btn-warning">Batal</a>
 				</div>
 			</form>
 		</div>
@@ -82,7 +83,7 @@ $koneksi = new mysqli ("localhost","root","","perpustakaan");
 
         if ($query_simpan) {
             echo "<script>alert('Tambah Data Sukses')</script>";
-            echo "<meta http-equiv='refresh' content='0; url=index.php'>";
+            echo "<meta http-equiv='refresh' content='0; url=data.php'>";
         }else{
             echo "<script>alert('Tambah Data Gagal')</script>";
             echo "<meta http-equiv='refresh' content='0; url=add.php'>";
