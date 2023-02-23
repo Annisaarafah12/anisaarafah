@@ -8,7 +8,7 @@ include "header.php";
   </head>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
 * {
   padding: 0;
   margin: 0;

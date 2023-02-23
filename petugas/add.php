@@ -82,8 +82,12 @@ $koneksi = new mysqli ("localhost","root","","perpustakaan");
 		$query_simpan = mysqli_query($koneksi, $sql_simpan);
 
         if ($query_simpan) {
-            echo "<script>alert('Tambah Data Sukses')</script>";
-            echo "<meta http-equiv='refresh' content='0; url=data.php'>";
+            echo (
+				"<script LANGUAGE='JavaScript'>
+				window.alert('Tambah Data Berhasil');
+				window.location.href='index.php?halaman=data';
+				</script>"
+			);
         }else{
             echo "<script>alert('Tambah Data Gagal')</script>";
             echo "<meta http-equiv='refresh' content='0; url=add.php'>";
